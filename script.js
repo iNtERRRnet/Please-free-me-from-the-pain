@@ -1,5 +1,3 @@
-
-
 let btns = document.querySelectorAll(".num-button");
 let allBtns = document.querySelectorAll(".button");
 let resultBox = document.querySelector("#result-box");
@@ -24,7 +22,6 @@ btnSpread.forEach((button, i) => {
   });
 });
 
-
 // Function to evalute Strings
 function evaluate(fn) {
     return new Function('return ' + fn)();
@@ -43,4 +40,3 @@ console.log(evaluate(allInputs));
 clearBtn.addEventListener('click', ()=> {
     resultBox.innerHTML = "0";
 })
- 
